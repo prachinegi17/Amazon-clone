@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    font-family: Arial;
+     border: border-box; /*[jitne bhi size border or padding ko mile vo size use ander count hona chaiye ] */
+}
+
+/* navbar */
+.navbar {
+    height: 60px;
+    background-color:  #0f1111;
+    color:white;
+    display:flex;
+    align-items: center; /* alignment in cross axis*/
+    justify-content: space-evenly;
+}
+
+/* [Navbar box-1] amazon logo */
+.nav-logo {
+    height:53px;
+    width: 100px;
+}
+
+.logo {
+   background-image: url("amazon_logo.png"); 
+   background-size: cover;
+   height:53px;
+   width: 100%;
+}
+/* border class  */
+.border {
+    border: 1.5px solid transparent;  
+}
+   /* hover the border to get the box when click on some element */
+.border:hover {
+      border: 1.5px solid white;
+   }
+
+/* address in amazon element [Navbar-Box-2] */
+.add-first{
+        color:#cccccc;
+        font-size: 0.85rem; 
+      margin-left:15px;
+}
+.add-sec{
+        font-size: 1rem; 
+        margin-left: 3px;
+ }
+
+.add-icon{
+       display: flex;   /* both comes in a same div [icon and India font] we can use flex */
+       align-items: center;
+ } 
+
+ /* nav-search option = [Navbar box-3] */
+.nav-search  {
+    display:flex;
+    justify-content: space-evenly ;
+    background-color: pink;
+    width:600px;
+    height:40px;
+    border-radius:5px;
+} 
+   /* select form element */
+.search-select {
+    background-color: #f3f3f3;
+    width:50px;
+    text-align:center;
+    border-top-left-radius:5px;
+    border-bottom-left-radius:5px;
+    border: none;
+}
+
+.search-input{
+    width:100%; /* jitna khali bacha area sb search input ko mille*/
+    font-size:1rem;
+    border:none;
+}
+   /* for seaching bar */
+.search-icon {
+    width:45px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2 rem;
+    background-color: rgb(248, 201, 14);
+    color:black;
+    border-top-right-radius:5px;
+    border-bottom-right-radius:5px; 
+}
+.nav-search:hover {/* when you click on search area it will display a orange border */
+            border: 2px solid orange;
+        }
+
+/*  Navbar Box-4  and box-5  */
+span {
+    font-size: 0.75rem;
+}
+.navsecond {   
+    font-size: 0.85rem;
+    font-weight:700; /* [don't know why but it is not working in webpage , so i use "bold tag" in index.html*/
+}
+
+/*  Cart Navbar box-6  */
+.nav-cart i {   /*"nav-cart i " used for every icon used in this class */
+     font-size: 30px;
+}
+.nav-cart {
+    font-size: 0.85rem ;
+    font-weight: 700;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------ */
+/*8 Panel  **/
+.panel {
+    height:40px;
+    background-color: #222f3d;
+    display:flex;
+    color:white;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.panel-options p{  /* panel option all paragraph tags*/
+    display:inline;
+    margin-left: 15px;
+}
+
+.panel-options {
+    width: 70%;   /*  Panel ki width ka 70% option ko jata hai  */
+    font-size: 0.85rem;
+}
+
+.panel-deals {
+    font-size:0.9rem;
+    font-weight: 700;
+}
+/* --------------------------------------------------------------------------------------------------------------------------  */
+/* Hero section */
+.hero-section {
+    background-image: url("hero.jpg");
+    background-size: cover;
+    height: 310px;
+    display:flex;
+    justify-content: center;
+    align-items: flex-end;   /*[cross-axis is from top to bottom, so flex-end will be on bottom]  */
+}
+.hero-msg {
+    background-color: white;
+    color:black;
+    height:30px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem ;
+    width:70%;
+    margin-bottom: 25px;
+}
+.hero-msg a {
+    color:#007185;
+}
+
+/* --------------------------------------------------------------------------------------------------------------------------   */
+/* main content section  or shop- Section */
+.shop-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color:#2c1e06ef ;
+
+}
+.box{
+    /* border: 2px solid black; */
+    height: 400px;  /*  height of each box */
+    width: 23%; /*  means the 4 box per row */
+    background-color: white;
+    padding: 20px 0px 15px ;
+    margin-top: 15px;
+}
+
+.box-img {
+    height:300px;
+    background-size: cover; 
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.box-content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.box-content p {
+    color:#007185;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------- */
+/* Footer section  */
+footer {
+     margin-top: 15px;
+}
+
+.foot-panel1 {
+    background-color:rgb(88, 73, 12);
+    color:white;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.foot-panel2 {
+    background-color:#222f3d ; /* rgb(69, 48, 14) */
+    color:white;
+    height:300px;
+    display:flex;
+    justify-content: space-evenly;
+}
+
+ul {
+    margin-top: 20px;
+}
+
+ul a {
+    display: block;
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color:#dddddd
+}
+
+.foot-panel3 {
+    background-color: #222f3d;
+    color:white;
+    border: 0.3px solid white;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    background-image: url("amazon_logo.png"); 
+    background-size: cover;
+    height:50px;
+    width: 100px;  
+}
+
+.foot-panel4 {
+    background-color: #0f1111;
+    color:white;
+    height:70px;
+    font-size:  0.7rem;
+    text-align: center;  
+    /* display:flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.pages {
+      padding-top:25px;
+}
+
+.copyright {
+    padding-top: 5px;
+}
+ 
